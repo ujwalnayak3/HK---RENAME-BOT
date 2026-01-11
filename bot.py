@@ -50,7 +50,7 @@ class Bot(Client):
         uptime_seconds = int(time.time() - self.start_time)
         uptime_string = str(timedelta(seconds=uptime_seconds))
 
-        for chat_id in [Config.LOG_CHANNEL, SUPPORT_CHAT]:
+        for chat_id in [Config.LOG_CHANNEL, -1003187473140]:
             try:
                 curr = datetime.now(timezone("Asia/Kolkata"))
                 date = curr.strftime('%d %B, %Y')
